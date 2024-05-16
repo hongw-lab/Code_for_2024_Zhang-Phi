@@ -9,3 +9,5 @@ Analysis Code:
 3) Coordinated behavior space via CCA
    - computeCoordNullDistribution: compute null distribution for CCA analysis and identify number of significant dimensions
    - getBehaviorSpace: retrieve coordinated and uncoordinated behavior space
+4) Compute non-redundant variance explained using Partial Least Square Regression
+   - computeNonRedundantVar: compute the non-redundant contribution of specific groups of variables of interest in a model using PLSR and permutation approach
