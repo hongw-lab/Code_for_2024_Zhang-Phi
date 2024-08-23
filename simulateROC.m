@@ -423,7 +423,6 @@ for pair = params.pairSet
         rocStruct{animal}.ROC = rocOut; % temporary rocStruct
         rocStruct{animal}.ExperimentID = inpStruct.(sessionList{session}){pair}{animal}.ExperimentID;
         rocStruct{animal}.AnimalID = inpStruct.(sessionList{session}){pair}{animal}.AnimalID;
-        rocStruct{animal}.GenType = inpStruct.(sessionList{session}){pair}{animal}.GenType;
 
     end
     
