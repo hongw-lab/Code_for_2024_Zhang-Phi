@@ -42,7 +42,7 @@ permCorr = nan(nDims, numSims);
 
 parfor sim = 1:numSims
     data2Perm = tempShift(data2, 60); % Assuming tempShift is a function that permutes data2
-    [~, ~, singularValuesPerm, projectedPerm1, projectedPerm2] = getSharedSpace(data1, data2Perm);
+    [~, ~, singularValuesPerm, projectedPerm1, projectedPerm2] = plsc(data1, data2Perm);
     permCov(:, sim)  = diag(singularValuesPerm);
     permCorr(:, sim) = diag(corr(projectedPerm1, projectedPerm2));
 end
